@@ -13,7 +13,6 @@ interface Props {
 }
 
 export default function DisplayTable({ headers, dataRows }: Props) {
-  
   return (
     <TableContainer component={Paper} style={styles.tableContainer}>
       <Table size="small" aria-label="a dense table">

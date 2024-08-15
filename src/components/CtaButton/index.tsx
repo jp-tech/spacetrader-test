@@ -11,7 +11,12 @@ interface Props {
   disabled?: boolean;
 }
 
-export default function CtaButton({children, onClick, disabled = false, size = 'large'}: Props) {
+export default function CtaButton({
+  children,
+  onClick,
+  disabled = false,
+  size = 'large'
+}: Props) {
   return (
     <Button
       type="submit"

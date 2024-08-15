@@ -11,6 +11,7 @@ import Chip from '@mui/material/Chip';
 import { COPY } from '../../copy';
 import useAcceptContract from '../../api/useAcceptContract';
 import CtaButton from '../CtaButton';
+import { colors } from '../../globalStyles/colors';
 
 interface Props {
   contracts: any[];
@@ -40,7 +41,7 @@ export default function ContractTable({ contracts }: Props) {
               <TableCell style={styles.tableBodyCell}>
                 <a
                   href="#"
-                  style={{color:'#F5F5F5'}}
+                  style={{ color: colors.whiteSmoke }}
                   onClick={() => alert(JSON.stringify(contract))}
                 >
                   {contract?.type}
